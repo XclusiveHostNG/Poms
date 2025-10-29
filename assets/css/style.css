@@ -1,0 +1,64 @@
+:root {
+    --poms-primary: #0d6efd;
+    --poms-secondary: #20c997;
+    --poms-dark: #1a1f36;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f9fc;
+    color: #1f2937;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-banner {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.85), rgba(32, 201, 151, 0.85)), url('../images/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 6rem 0;
+    text-align: center;
+}
+
+.hero-banner h1 {
+    font-weight: 700;
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+}
+
+.hero-banner p {
+    font-size: clamp(1rem, 2.5vw, 1.3rem);
+}
+
+.section-title {
+    font-weight: 700;
+    color: var(--poms-dark);
+    margin-bottom: 1.5rem;
+}
+
+.feature-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 1.5rem 3rem rgba(15, 23, 42, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1.5rem 4rem rgba(15, 23, 42, 0.18);
+}
+
+.event-card {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid rgba(13, 110, 253, 0.1);
+}
+
+.footer .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 767.98px) {
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+}

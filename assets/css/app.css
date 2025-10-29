@@ -1,0 +1,15 @@
+.dashboard-card {
+    border-radius: 1rem;
+    box-shadow: 0 1rem 2rem rgba(15, 23, 42, 0.12);
+    transition: transform 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-4px);
+}
+
+.status-badge {
+    font-size: 0.75rem;
+    border-radius: 50rem;
+    padding: 0.35rem 0.75rem;
+}
