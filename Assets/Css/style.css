@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #004085;
+    --secondary-color: #ff9f1c;
+    --gradient: linear-gradient(135deg, #004085 0%, #0d6efd 50%, #1c7ed6 100%);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #1f2933;
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.hero-section {
+    background: var(--gradient);
+    color: #fff;
+    padding: 6rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url('https://www.transparenttextures.com/patterns/batthern.png');
+    opacity: 0.2;
+}
+
+.hero-section .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: #212529;
+}
+
+.section-title {
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+.footer {
+    background-color: #0b172a;
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 4rem 0;
+    }
+}

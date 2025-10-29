@@ -1,0 +1,40 @@
+.dashboard-card {
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0.5rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, #0d6efd 0%, #1c7ed6 100%);
+}
+
+.timeline-item {
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 0.75rem;
+}
